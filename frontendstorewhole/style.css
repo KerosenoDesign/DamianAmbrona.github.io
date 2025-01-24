@@ -1,0 +1,282 @@
+
+.oswald {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with a value from 200 to 700 */
+  font-style: normal;
+}
+
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: "Oswald", serif;
+}
+
+/* Header y Footer */
+header, footer {
+  background-color: #007DF5;
+  color: #fff;
+  text-align: center;
+  padding: 20px ;
+  font-size: 1.25rem;
+  
+}
+
+.logo-container {
+  text-align: center;
+  padding: 10px;
+  
+ 
+  
+}
+.logo {
+ margin: 10%;
+ margin-left: 25%;
+  height: 50%;
+  max-width: 50%;
+}
+h1 {
+  margin: 0;
+  font-weight: 900;
+  font-family: "Oswald", serif;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 100;
+}
+
+footer h1 {
+  font-size: 1rem;
+  font-family: "Oswald", serif;
+}
+
+/* Sidebar */
+aside {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  width: 130px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+margin:0 ;
+}
+
+aside ul li {
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-weight: 100;
+  text-align: right;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+aside ul li a:hover {
+  color: #FF7A24;
+}
+
+/* Main Layout */
+main {
+  margin-left: 160px;
+  padding: 30px;
+  font-family: "Oswald", serif;
+}
+
+section.bg-dheader {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #e2e8f0;
+}
+
+section.bg-dheader h2 {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Productos Destacados */
+.featured-product {
+  background-color: #333333;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto 30px;
+  max-width: 500px;
+  
+}
+
+.featured-product img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.featured-product h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.featured-product p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Cards */
+.card {
+  background-color: #003D6F;
+  border-radius: 12px;
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+.card-body h5{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 8px 8px;
+  color: #FF7A24;
+ }
+ 
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #FF7A24;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.card-link {
+  color: #FF7A24;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 13px;
+}
+
+.card-link:hover {
+  color: #fff;
+}
+
+/* Row Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra horizontalmente */
+  gap: 15px; /* Espaciado consistente entre elementos */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Columnas */
+.col-12.col-sm-4.col-lg-2 {
+  flex: 1 1 18%; /* Ocupa un 18% del contenedor */
+  max-width: 18%;
+  margin-bottom: 15px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  aside {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      height: auto;
+  }
+
+  main {
+      margin-left: 0;
+  }
+
+  .featured-product {
+      max-width: 90%;
+  }
+
+  .row {
+      gap: 10px;
+  }
+
+  .col-12.col-sm-4.col-lg-2 {
+      flex: 1 1 45%;
+      max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+  }
+
+  .col-12.col-sm-4.col-lg-2 {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+
+  .card {
+      width: 100%;
+  }
+
+
+  .logo-container {
+    text-align: center;
+    padding: 10px;
+    
+   
+    
+  }
+  .logo {
+   margin: 30%;
+   margin-left: 35%;
+    height: 50px;
+  }
+
+}
