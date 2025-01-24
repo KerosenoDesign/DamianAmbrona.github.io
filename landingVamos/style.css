@@ -1,0 +1,233 @@
+/* style.css */
+@font-face {
+  font-family: PPletrareg;
+  src: url(fonts/PPLettraMono-Ultralight.otf);
+}
+@font-face {
+  font-family: PPletrabold;
+  src: url(fonts/PPLettraMono-Medium.otf);
+}
+@font-face {
+  font-family: PPletrabolditalic;
+  src: url(fonts/PPLettraMono-MediumItalic.otf);
+}
+@font-face {
+  font-family: PPletraregitalic;
+  src: url(fonts/PPLettraMono-UltralightItalic.otf);
+}
+/* Colors */
+:root {
+  --primary-color: #EA5F28;
+  --secondary-color: #FDF0D5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PPletrareg;
+}
+.display-1{
+  font-family: PPletraregitalic;
+
+}
+
+.orangetext{
+  color: #EA5F28;
+}
+
+.about{
+  font-family: PPletrabold;
+  color: #EA5F28;
+  
+}
+ /* Estilo inicial para el contenedor
+ Texto Animado About */
+  #animated-text {
+    font-size: 3rem;
+    line-height: 1.6;
+    white-space: pre-wrap; /* Mantiene saltos de línea */
+    overflow: hidden; /* Esconde el texto mientras se escribe */
+    display: inline-block; /* Evita que el contenedor sea bloqueante */
+    
+  }
+
+  .lead{
+  margin-top: 40px;
+  
+}
+
+.mb-4 {
+  font-size: 140px;
+}
+ .containeruno{
+  margin-left: 25px;
+  margin-right: 25px;
+ }
+
+.subtitle{
+  font-family: PPletrabolditalic;
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+
+
+.img-fluid rounded{
+  max-height: 20%;
+
+}
+
+
+
+
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.image-fullwidth img {
+  display: block;
+  width: auto;
+  height: 800px;
+  object-fit: cover
+}
+
+
+section {
+  padding: 50px 0;
+}
+
+.image-fullwidth{
+  padding: 0px ;
+}
+
+
+
+
+.bolduno{
+  font-family: PPletrabolditalic;
+  margin-bottom: 5px;
+}
+
+.custom-btn {
+  margin-top: 30px;
+  background-color: #EA5F28;
+  border-color: #EA5F28;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Smooth transition for scaling and color */
+}
+
+.custom-btn:hover {
+  background-color: #006633; /* Cambia este color según tus necesidades */
+  border-color: #006633; /* Cambia este color según tus necesidades */
+  transform: scale(1.1); /* Use transform for scaling */
+}
+
+.carousel{
+  padding: 0px;
+  margin: 0;
+  height: 950px;
+  object-fit: cover;
+}
+
+.entrada{
+  max-width: 80%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
+}
+
+/* Estilo base para la imagen */
+.hover-zoom {
+  transition: transform 0.3s ease; /* Suaviza la transformación */
+}
+
+/* Efecto al hacer hover */
+.hover-zoom:hover {
+  transform: scale(1.3); /* Aumenta el tamaño al 110% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar Base */
+
+.navbar {
+  position: fixed;
+
+  mix-blend-mode: difference;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: top 0.5s ease-in-out; /* Smooth hide/show effect */
+}
+
+.navbar-logo {
+  height: 20px; /* Adjust to fit your navbar height */
+  width: auto; /* Maintain the aspect ratio of the logo */
+  display: inline-block; /* Ensures proper alignment */
+  vertical-align: middle; /* Aligns with text or other elements */
+  mix-blend-mode: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255);
+}
+
+/* Navbar content transition */
+.navbar-transition {
+  animation: slide-out 0.5s forwards; /* Push content left and right */
+}
+
+/* Keyframes for navbar content animation */
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateX(50%);
+    opacity: 0;
+  }
+}
+
+/* Smooth scrolling sections */
+section {
+  padding: 60px 15px; /* Reduced default padding for header content */
+  transition: padding 0.9s ease; /* Adjust padding dynamically */
+}
+
+/* Default hidden state for elements */
+.visible-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+/* Visible state with animations */
+.visible-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
